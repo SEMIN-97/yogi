@@ -1,0 +1,57 @@
+.textButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+
+  &:hover > span {
+    text-decoration: underline;
+  }
+
+  &.primary {
+    color: var(--color-blue-400);
+
+    &:hover {
+      color: var(--color-blue-600);
+    }
+  }
+
+  &.secondary {
+    color: var(--color-grey-600);
+
+    &:hover {
+      color: var(--color-grey-500);
+    }
+  }
+
+  &.plain {
+    color: var(--color-grey-800);
+
+    &:hover {
+      color: var(--color-grey-700);
+    }
+  }
+
+  &.medium {
+    gap: 4px;
+  }
+
+  &.small {
+    gap: 4px;
+    font-size: .875rem;
+  }
+
+  &.iconRight {
+    flex-direction: row-reverse;
+  }
+
+  &:disabled {
+    color: var(--color-grey-400) !important;
+    cursor: not-allowed;
+
+    > span {
+      text-decoration: none !important;
+    }
+  }
+}
