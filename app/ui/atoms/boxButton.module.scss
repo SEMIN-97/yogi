@@ -1,0 +1,70 @@
+.boxButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+
+  &.primary {
+    background-color: var(--color-blue-400);
+    color: #FFF;
+
+    &:hover {
+      background-color: var(--color-blue-600);
+    }
+  }
+
+  &.secondary {
+    background-color: var(--color-grey-300);
+    color: var(--color-grey-800);
+
+    &:hover {
+      background-color: #E1E1E1;
+    }
+  }
+
+  &.plain {
+    background-color: #FFF;
+    border: 1.5px solid var(--color-grey-300);
+    color: var(--color-grey-800);
+
+    &:hover {
+      background-color: var(--color-grey-200);
+    }
+  }
+
+  &.large {
+    gap: 8px;
+    height: 48px;
+  }
+
+  &.medium {
+    gap: 4px;
+    height: 40px;
+  }
+
+  &.small {
+    gap: 4px;
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 8px;
+    font-size: .75rem;
+  }
+
+  &.rounded {
+    border-radius: 100vh;
+  }
+
+  &.iconRight {
+    flex-direction: row-reverse;
+  }
+
+  &:disabled {
+    background-color: var(--color-grey-100) !important;
+    border: 0;
+    color: var(--color-grey-400) !important;
+    cursor: not-allowed;
+  }
+}
