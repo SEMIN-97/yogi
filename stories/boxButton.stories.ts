@@ -12,17 +12,17 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     icon: {
-      description: '사용할 Google Icon을 입력해주세요 <br>예) Search'
+      description: '사용할 Google Icon을 입력해주세요 <br>예) Search',
     },
     iconPos: {
-      description: 'Icon에 값이 있는 경우에만 유효합니다'
-    }
+      description: 'Icon에 값이 있는 경우에만 유효합니다',
+    },
   },
   args: {
     label: '검색',
     variant: 'primary',
     size: 'medium',
-    onClick: fn()
+    onClick: fn(),
   },
 } satisfies Meta<typeof BoxButton>;
 
@@ -33,48 +33,48 @@ export const Primary: Story = { };
 
 export const Secondary: Story = {
   args: {
-    variant: 'secondary'
-  }
+    variant: 'secondary',
+  },
 };
 
 export const Plain: Story = {
   args: {
-    variant: 'plain'
-  }
+    variant: 'plain',
+  },
 };
 
 export const Icon: Story = {
   args: {
-    icon: 'Search'
-  }
+    icon: 'Search',
+  },
 };
 
 export const Large: Story = {
   args: {
-    size: 'large'
-  }
+    size: 'large',
+  },
 };
 
 export const Medium: Story = {
   args: {
-    size: 'medium'
-  }
+    size: 'medium',
+  },
 };
 
 export const Small: Story = {
   args: {
-    size: 'small'
-  }
+    size: 'small',
+  },
 };
 
 export const Rounded: Story = {
   args: {
-    rounded: true
-  }
+    rounded: true,
+  },
 };
 
 export const Disabled: Story = {
   args: {
-    disabled: true
-  }
+    disabled: true,
+  },
 };

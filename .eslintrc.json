@@ -5,10 +5,7 @@
   ],
   "rules": {
     "no-var": "error",
-    "semi": [
-      "error",
-      "always"
-    ],
+    "semi": ["error", "always"],
     "quotes": [
       "error",
       "single",
@@ -23,6 +20,8 @@
         "beforeSelfClosing": "always",
         "afterOpening": "never"
       }
-    ]
+    ],
+    "comma-dangle": ["error", "always-multiline"],
+    "yoda": ["error", "always"]
   }
 }

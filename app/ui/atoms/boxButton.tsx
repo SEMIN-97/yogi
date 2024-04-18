@@ -6,7 +6,7 @@ interface BoxButtonProps {
   label: string;
   disabled?: boolean;
   icon?: string;
-  iconPos?: 'left' | 'right';
+  iconPos?: 'left' | 'right'
   onClick?: () => void;
   rounded?: boolean;
   size?: 'small' | 'medium' | 'large';
@@ -21,7 +21,7 @@ const BoxButton = ({
   variant = 'primary',
   icon,
   label,
-  onClick
+  onClick,
 }: BoxButtonProps) => {
   return (
     <button

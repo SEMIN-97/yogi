@@ -19,7 +19,7 @@ const TextButton = ({
   variant = 'primary',
   icon,
   label,
-  onClick
+  onClick,
 }: TextButtonProps) => {
   return (
     <button
