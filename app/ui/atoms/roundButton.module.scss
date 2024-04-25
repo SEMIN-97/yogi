@@ -1,0 +1,39 @@
+.roundButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--color-grey-800);
+  font-weight: 600;
+
+  &:hover {
+    background-color: var(--color-grey-200);
+  }
+
+  &.active {
+    background-color: var(--color-blue-500);
+    color: #FFF;
+  }
+
+  &.outlined {
+    border: 1.5px solid var(--color-grey-300);
+  }
+
+  &.medium {
+    width: 32px;
+    height: 32px;
+    font-size: .75rem;
+  }
+
+  &.large {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  &:disabled {
+    color: var(--color-grey-400) !important;
+    background-color: transparent !important;
+    cursor: not-allowed;
+  }
+}
