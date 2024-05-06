@@ -1,0 +1,68 @@
+@import 'app/mixin';
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-grey-800);
+  font-weight: 500;
+  font-size: 0.9375rem;
+
+  &.disabled {
+    color: var(--color-grey-400);
+
+    .icon {
+      border-color: var(--color-grey-400);
+      cursor: not-allowed;
+
+      &:before {
+        background-color: var(--color-grey-400) !important
+      }
+    }
+  }
+
+  .icon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--color-grey-600);
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-blue-500);
+      transform: scale(0);
+      transition: cubic-bezier(0.4, 0, 0.2, 1) .15s;
+      content: '';
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #FFF;
+      font-size: 1.2rem;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  input[type=checkbox] {
+    &:checked {
+      + .icon:before {
+        transform: scale(1);
+      }
+    }
+
+    &:focus-visible {
+      + .icon {
+        @include focus-ring;
+      }
+    }
+  }
+}

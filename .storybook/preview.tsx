@@ -1,7 +1,7 @@
 import type { Preview } from "@storybook/react";
 
 import { Pretendard } from '@/app/font';
-import '@/app/globals.css';
+import '@/app/globals.scss';
 
 const preview: Preview = {
   parameters: {
