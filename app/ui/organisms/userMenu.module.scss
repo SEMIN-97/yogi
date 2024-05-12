@@ -1,0 +1,36 @@
+@import "/app/mixin";
+
+.wrapper {
+  position: relative;
+}
+
+.btnMenu {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--color-grey-300);
+  border-radius: 100vh;
+
+  .userIcon {
+    @include circle(24px);
+    background-color: var(--color-grey-400);
+
+    i {
+      color: #FFF;
+    }
+  }
+}
+
+.floatingMenu {
+  display: block;
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 168px;
+
+  &.hide {
+    display: none;
+  }
+}

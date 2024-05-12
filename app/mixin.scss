@@ -1,3 +1,9 @@
+@mixin circle($r) {
+  width: $r;
+  height: $r;
+  border-radius: 50%;
+}
+
 @mixin focus-ring {
   outline: 3px solid var(--color-blue-200);
   outline-offset: 2px;
