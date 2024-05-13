@@ -1,0 +1,39 @@
+@import "app/mixin";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 82px;
+
+  a {
+    display: block;
+    width: 100%;
+  }
+
+  svg {
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .header {
+    height: 76px;
+    padding: 0 40px;
+  }
+
+  .logo {
+    width: 105px;
+  }
+}
+
+@include desktop {
+  .header {
+    padding: 0;
+  }
+}

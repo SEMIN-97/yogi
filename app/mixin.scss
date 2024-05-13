@@ -8,3 +8,15 @@
   outline: 3px solid var(--color-blue-200);
   outline-offset: 2px;
 }
+
+@mixin tablet {
+  @media (min-width: 912px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
