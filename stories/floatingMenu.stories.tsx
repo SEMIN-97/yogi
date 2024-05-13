@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import FloatingMenu from '@/app/ui/molecules/floatingMenu';
+import FloatingMenu from '@/ui/molecules/floatingMenu';
 
 const meta = {
   title: 'Molecules/FloatingMenu',

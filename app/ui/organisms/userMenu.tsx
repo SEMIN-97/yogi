@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import clsx from 'clsx';
 
-import FloatingMenu from '@/app/ui/molecules/floatingMenu';
+import FloatingMenu from '@/ui/molecules/floatingMenu';
 import styles from './userMenu.module.scss';
 
 const menus = [

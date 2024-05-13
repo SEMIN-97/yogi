@@ -1,4 +1,4 @@
-import MenuItem, { MenuItemProps } from '@/app/ui/atoms/menuItem';
+import MenuItem, { MenuItemProps } from '@/ui/atoms/menuItem';
 import styles from './floatingMenu.module.scss';
 
 interface FloatingMenuProps {

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import UserMenu from '@/app/ui/organisms/userMenu';
+import UserMenu from '@/ui/organisms/userMenu';
 
 const meta = {
   title: 'Organisms/UserMenu',

@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 import clsx from 'clsx';
 
-import UserMenu from '@/app/ui/organisms/userMenu';
-import Logo from '@/app/ui/atoms/logo';
+import UserMenu from '@/ui/organisms/userMenu';
+import Logo from '@/ui/atoms/logo';
 import styles from './header.module.scss';
 
 export default function Header() {

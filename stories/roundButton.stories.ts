@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import RoundButton from '@/app/ui/atoms/roundButton';
+import RoundButton from '@/ui/atoms/roundButton';
 
 const meta = {
   title: 'Atoms/RoundButton',

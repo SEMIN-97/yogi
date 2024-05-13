@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import Header from '@/app/ui/organisms/header';
+import Header from '@/ui/organisms/header';
 import './globals.scss';
 import { Pretendard } from './font';
 
