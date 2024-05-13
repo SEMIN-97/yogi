@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
+import React from 'react';
 
 import Header from '@/ui/organisms/header';
 import './globals.scss';
 import { Pretendard } from './font';
-
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="ko">
       <body className={Pretendard.className}>
         <Header />
-        { children }
+        <main>{ children }</main>
       </body>
     </html>
   );
